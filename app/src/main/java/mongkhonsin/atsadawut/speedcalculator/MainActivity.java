@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     if(answer > 80){
                         AlertDialog.Builder speedLimit = new  AlertDialog.Builder(MainActivity.this);
                         speedLimit.setTitle("SPEED CALCUTOR");
-                        speedLimit.setMessage(R.string.analogWarnniSpeedLimit);
+                        speedLimit.setMessage(R.string.analogWarnniSpeed);
                         speedLimit.setPositiveButton("OK", null);
                         speedLimit.show();
                     }

@@ -7,5 +7,5 @@
     <string name="average_speed_km_h">Average Speed (km/h)</string>
     <string name="toastWarnningInfoIsNull">Distence and time are required</string>
     <string name="toastWarnningInfoTimeIsZero">Time must be greater than zero</string>
-    <string name="analogWarnniSpeedLimit">Speed is over limit!</string>
+    <string name="analogWarnniSpeed">Speed is over limit!</string>
 </resources>

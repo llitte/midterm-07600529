@@ -8,5 +8,5 @@
     <string name="average_speed_km_h">ความเร็วเฉลี่ย (กม./ชม.)</string>
     <string name="toastWarnningInfoIsNull">ต้องกรอกระยะทางและเวลา</string>
     <string name="toastWarnningInfoTimeIsZero">เวลาต้องมากกว่าศูนย์</string>
-    <string name="analogWarnniSpeedLimit">ความเร็วเกินกำหนด!</string>
+    <string name="analogWarnniSpeed">ความเร็วเกินกำหนด!</string>
 </resources>
