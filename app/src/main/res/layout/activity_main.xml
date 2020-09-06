@@ -4,4 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:layout_gravity="center"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1000:625"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/speed_meter" />
+
+    <EditText
+        android:id="@+id/distence_text"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/enter_distence_meter"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <EditText
+        android:id="@+id/time_text"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/enter_time_second"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/distence_text"
+        app:layout_constraintStart_toStartOf="@+id/distence_text"
+        app:layout_constraintTop_toBottomOf="@+id/distence_text" />
+
+    <TextView
+        android:id="@+id/title_app"
+        android:layout_width="310dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="SPEED CALCULATOR"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="69dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/clear"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/time_text"
+        app:layout_constraintTop_toBottomOf="@+id/time_text" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/calculate"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/time_text"
+        app:layout_constraintTop_toBottomOf="@+id/time_text" />
+
+    <TextView
+        android:id="@+id/avg_speed_text"
+        android:layout_width="201dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/average_speed_km_h"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/distence_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/distence_text"
+        app:layout_constraintTop_toBottomOf="@+id/time_text" />
+
+    <TextView
+        android:id="@+id/answer_text"
+        android:layout_width="202dp"
+        android:layout_height="33dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/distence_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/distence_text"
+        app:layout_constraintTop_toBottomOf="@+id/avg_speed_text"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

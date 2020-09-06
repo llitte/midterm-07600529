@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SPEED CALCULATOR</string>
+    <string name="enter_distence_meter">Enter Distence (meter)</string>
+    <string name="enter_time_second">Enter Time (second)</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="clear">CLEAR</string>
+    <string name="average_speed_km_h">Average Speed (km/h)</string>
+    <string name="toastWarnningInfoIsNull">Distence and time are required</string>
+    <string name="toastWarnningInfoTimeIsZero">Time must be greater than zero</string>
+    <string name="analogWarnniSpeedLimit">Speed is over limit!</string>
 </resources>
